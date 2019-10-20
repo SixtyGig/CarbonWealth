@@ -1,0 +1,150 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /*That height or more and no less than 100%, the viewport is the length of the actual view*/
+    position: relative; 
+  }
+  
+  header {
+    background-color: #333333;
+    position:fixed;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  
+  main {
+    text-align: center;
+    position: relative;
+  }
+  
+  main h1 {
+    color: #004977;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 70px;
+    margin-top: 0px;
+    padding-top: 80px;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+  }
+  
+  footer {
+    background-color: #004977;
+    color: #fff;
+    padding: 30px 0;  
+    margin-top: 10%;
+    width:100%;
+    position: relative;
+    bottom: -65px;
+  }
+  
+  footer p {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    
+  }
+  
+  .container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+  }
+  
+  .jumbotron {
+    height: 400px;
+    background-image: url("capitalone.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-bottom:10%;
+    background-position: center center;
+    
+  }
+  
+  .btn-main {
+    background-color: #004977;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    padding: 16px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .btn-default {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 1.3px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;  
+    margin-bottom: 20px;      
+  }
+  
+  /*Max width is more than 500px then the rules are not applied*/
+  @media (max-width: 500px) { 
+    main h1 {
+      font-size: 50px;
+      padding: 0 40px;
+    }
+    #customizedComment{
+      display:none;}
+  }
+
+  @media (max-width: 800px)
+  {
+    table.calculation td{
+      font-size: 12px;
+    }
+  }
+
+  /*Apply these rules when the screen is wider than 100px*/
+  @media (min-width: 100px)
+  {
+    .jumbotron{
+      height: 475px;
+    }
+    
+  }
+  
+ 
+table.calculation{
+    padding: 10px ;
+    width: 80%;
+    text-align: left;
+    line-height: 50px;
+    font-size: 1.5vw;
+    border-collapse: collapse;
+    margin:auto;
+    /* margin-left: auto;
+    margin-right:auto; */
+    /* border: 1px solid black; */
+}
+.calculation tr td{
+    border: 1px solid #d4d4d4;
+    /* border-bottom: 1px solid #eeeeee; */
+    padding-left: 5%;
+}
+#tableLabel{
+  display: none;
+}
+#tableHeight{
+  min-height: 80px;
+
+}
+
+#customizedComment{
+  border: 1px solid black;
+  font-size: 1.5vw;
+  margin: 3% 17%;
+  padding: 3%;
+  text-align: center;
+  display: none;
+}
